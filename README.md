@@ -1,4 +1,4 @@
-# Gant diagram
+# Gantt diagram
 
 ```mermaid
 
