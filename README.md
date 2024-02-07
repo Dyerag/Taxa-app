@@ -47,11 +47,4 @@ gantt
     Add the other user options : 16-02-24, 4d
 
     Build result section : 19-02-24, 1d
-
- 
-    section C#
-
-    Create trip class : 20-02-24, 1d
-
-    Create formula class : 20-02-24, 1d
 ```
