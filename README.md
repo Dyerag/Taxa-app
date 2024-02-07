@@ -13,14 +13,13 @@ gantt
 
     section Mockup
 
-    Design Mockup : 07-02-24, 2d
-
+    Design mockup : 07-02-24, 2d
 
     section Research
 
-    Blazor research : 09-02-24, 4d
+    Blazor : 09-02-24, 4d
 
-    API research : 12-02-24, 2d
+    API : 12-02-24, 2d
 
     HTML summary: 13-02-24, 1d
 
@@ -33,17 +32,16 @@ gantt
 
     Make distance section : 14-02-24, 2d
 
-    integrate google maps? : 14-02-24, 2d 
+    Integrate google maps : 14-02-24, 2d 
 
     Add the other user options : 16-02-24, 4d
 
     Build result section : 19-02-24, 1d
 
-
+ 
     section C#
 
-    Create formula methods : 20-02-24, 1d
+    Create trip class : 20-02-24, 1d
 
-    
-    
+    Create formula class : 20-02-24, 1d
 ```
