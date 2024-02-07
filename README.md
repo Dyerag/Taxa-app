@@ -18,19 +18,32 @@ gantt
 
     section Research
 
-    Blazor Research : 09-02-24, 5d
+    Blazor research : 09-02-24, 4d
 
-    HTML Summary: 13-02-24, 1d
+    API research : 12-02-24, 2d
 
-    css summary: 13-02-24, 1d
+    HTML summary: 13-02-24, 1d
+
+    CSS summary: 13-02-24, 1d
 
 
-    section Programmering
+    section HTML
 
-    Create overall program body : 14-02-24, 2d
+    Create basic body : 14-02-24, 1d
 
-add in left-side input spaces : 16-02-24, 2d
+    Make distance section : 14-02-24, 2d
 
-    integrate google maps  : 16-02-24, 2d
+    integrate google maps? : 14-02-24, 2d 
 
+    Add the other user options : 16-02-24, 4d
+
+    Build result section : 19-02-24, 1d
+
+
+    section C#
+
+    Create formula methods : 20-02-24, 1d
+
+    
+    
 ```
