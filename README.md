@@ -10,6 +10,16 @@ gantt
 
     axisFormat %m/%d
 
+    section Ansøgning
+
+    Ansøgning n1 : 07-02-24, 1d
+
+    Ansøgning n2 : 07-02-24, 1d
+
+    Ansøgning n3 : 08-02-24, 1d
+
+    Ansøgning n4 : 09-02-24, 1d
+
 
     section Mockup
 
