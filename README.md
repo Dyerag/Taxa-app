@@ -10,6 +10,10 @@ gantt
 
     axisFormat %m/%d
 
+    tickinterval 1day
+    excludes weekends
+
+
     section Ansøgning
 
     Ansøgning n1 : 07-02-24, 1d
@@ -41,9 +45,9 @@ gantt
 
     Create basic body : 16-02-24, 1d
 
-    Make distance section : 16-02-24, 4d
+    Make distance section : 16-02-24, 2d
 
-    Integrate google maps : 16-02-24, 4d 
+    Integrate google maps : 16-02-24, 2d 
 
     Add the other user options : 19-02-24, 2d
 
