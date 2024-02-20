@@ -1,2 +1,10 @@
-﻿#Top {
+﻿#top {
+    width: 100%;
+    height: 2%
+}
+
+main {
+    background-color: firebrick;
+    width: max-content;
+    height:auto
 }

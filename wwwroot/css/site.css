@@ -1,6 +1,8 @@
 body {
     background-color: rgb(240,240,240);
     padding: 15mm;
+    padding-top: 0mm;
+    margin-top: 0mm;
     font-family: Verdana;
 }
 
