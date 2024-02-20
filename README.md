@@ -32,29 +32,35 @@ gantt
 
     section Research
 
-    Blazor : 13-02-24, 2d
-
-    API : 14-02-24, 2d
+    Blazor : 13-02-24, 8d
 
     HTML summary: 15-02-24, 1d
 
     CSS summary: 15-02-24, 1d
 
 
-    section HTML
+    section html
 
-    Create basic body : 16-02-24, 1d
+    Create basic body : 16-02-24, 5d
 
-    Make distance section : 16-02-24, 2d
+    Add the other user options : 22-02-24, 2d
 
-    Integrate google maps : 16-02-24, 2d 
-
-    Add the other user options : 19-02-24, 2d
-
-    Build result section : 20-02-24, 1d
-
+    Build result section : 24-02-24, 2d
+    
 
     Section C#
 
-    Do something with The API stuff : 21-02-24, 5d
+    add funtionality : 25-02-24, 5d
+
+
+    section research p2
+
+    API : 01-03-24, 4d
+
+
+    section html p2
+
+    Make distance section : 05-03-24, 2d
+
+    Integrate google maps : 06-03-24, 3d 
 ```
