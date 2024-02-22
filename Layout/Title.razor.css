@@ -1,12 +1,11 @@
 ﻿#Base {
     height: inherit;
     width: inherit;
-    border: solid;
     display: flex;
     justify-content: center;
-    background-image: url(css/Triangle.png);
+    background-image: url(css/Background/Triangle.png);
     background-repeat: no-repeat;
-    background-size: 30% 100%;
+    background-size: 115mm 100%;
     background-position: center;
 }
 
