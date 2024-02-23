@@ -1,0 +1,28 @@
+﻿main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+    main > div {
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 90mm 100%;
+        padding-left: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+div > h4 {
+    text-decoration: underline;
+}
+
+.Even {
+    background-image: url(css/Background/Arrow-Yellow.png);
+}
+
+
+.Uneven {
+    background-image: url(css/Background/Arrow-Black.png);
+    color: white;
+}

@@ -4,16 +4,14 @@
 
 main {
     margin-top: 14px;
-    height: inherit;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    height: 168mm;
 }
 
 .CoreColor {
     border: solid;
     border-width: 2px;
-    background-color: ghostwhite;
+    background-color: white;
 }
 
 #left {
@@ -22,6 +20,7 @@ main {
 }
 
 #right {
-    margin-left: 8px;
+    margin-left:8px;
     width: 70%;
+    border:solid;
 }
