@@ -11,7 +11,8 @@ main {
 .CoreColor {
     border: solid;
     border-width: 2px;
-    background-color: white;
+    background-color: white;    
+    
 }
 
 #left {
