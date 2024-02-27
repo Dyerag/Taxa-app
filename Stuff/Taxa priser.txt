@@ -1,0 +1,30 @@
+Taxi pris scenarier
+
+Almindelig vogn: Dag
+- Start: 37 kr./tur
+- Kilometer: 12,75 kr./km
+- Minut: 5,75 kr./min
+
+Almindelig vogn: Nat/weekend/helligdag/d. 24 dec & d. 31 dec
+- Start: 47 kr./tur
+- Kilometer: 16 kr./km
+- Minut: 7 kr./min
+
+Stor vogn: Dag
+- Star: 77 kr./tur
+- Kilometer: 17 kr./km
+- Minut: 5,75 kr./min
+
+Stor vogn: Nat/weekend/helligdag/d. 24 dec & d. 31 dec
+- Star: 87 kr./tur
+- Kilometer: 19 kr./km
+- Minutpris: 7 kr./min
+
+Tillæg
+- Cykel: 30 kr. pr.
+- Opbæring: 30 kr. pr.
+- Lufthavn: 15 kr.
+- 5-6 passagerer: 40 kr.
+- Liftvogn: 350 kr.
+- Øresund: 350 kr.
+- Storebæltsbroen: 540 kr.
