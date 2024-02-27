@@ -1,11 +1,72 @@
 ﻿<main>
-    <div class="Even"><h4>Vogn</h4></div>
-    <div class="Uneven"><h4>Tidspunkt</h4></div>
-    <div class="Even"><h4>Cykel</h4></div>
-    <div class="Uneven"><h4>Opbæring</h4></div>
-    <div class="Even"><h4>Lufthavn</h4></div>
-    <div class="Uneven"><h4>5-6 passagerer</h4></div>
-    <div class="Even"><h4>LiftVogn</h4></div>
-    <div class="Uneven"><h4>Øresund</h4></div>
-    <div class="Even" ><h4>Storebæltsbroen</h4></div>
+
+    <div class="yellowArrow">
+        <h4>Vogn</h4>
+        <label for="Size"></label>
+        <select name="size" id="Size" class="cart">
+            <option selected disabled>Vælg vogn</option>
+            <option value="normal">Normal</option>
+            <option value="stor">Stor</option>
+        </select>
+    </div>
+    <div class="blackArrow">
+        <h4>Tidspunkt</h4>
+        <select name="time" class="cart">
+            <option selected disabled>Vælg tid</option>
+            <option value="dag">Dag</option>
+            <option value="nat">nat</option>
+            <option value="weekend">Weekend</option>
+            <option value="helligdag">Helligdag</option>
+            <option value="24 dec">24 dec</option>
+            <option value="31 dec">31 dec</option>
+        </select>
+    </div>
+    <div class="yellowArrow">
+        <h4>Cykel</h4>
+        <div class="Choice">
+            <input type="text" inputmode="numeric"/>
+            <p>+ 30kr.</p>
+        </div>
+    </div>
+    <div class="blackArrow">
+        <h4>Opbæring</h4>
+        <div class="Choice">
+            <p>+ 30kr.</p>
+        </div>
+    </div>
+    <div class="yellowArrow">
+        <h4>Lufthavn</h4>
+        <div class="Choice">
+            <input type="checkbox" />
+            <p>+ 15kr.</p>
+        </div>
+    </div>
+    <div class="blackArrow">
+        <h4>5-6 passagerer</h4>
+        <div class="Choice">
+            <input type="checkbox" />
+            <p>+ 40kr.</p>
+        </div>
+    </div>
+    <div class="yellowArrow">
+        <h4>LiftVogn</h4>
+        <div class="Choice">
+            <input type="checkbox" />
+            <p>+ 350kr.</p>
+        </div>
+    </div>
+    <div class="blackArrow">
+        <h4>Øresund</h4>
+        <div class="Choice">
+            <input type="checkbox" />
+            <p>+ 350kr.</p>
+        </div>
+    </div>
+    <div class="yellowArrow">
+        <h4>Storebæltsbroen</h4>
+        <div class="Choice">
+            <input type="checkbox" />
+            <p>+ 540kr.</p>
+        </div>
+    </div>
 </main>
