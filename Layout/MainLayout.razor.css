@@ -5,6 +5,7 @@
 main {
     margin-top: 14px;
     display: flex;
+    justify-content:center;
     /*height: 168mm;*/
 }
 
@@ -17,11 +18,10 @@ main {
 
 #left {
     margin-right: 8px;
-    width: 30%;
 }
 
 #right {
     margin-left:8px;
-    width: 70%;
+    width: 20cm;
     border:solid;
 }

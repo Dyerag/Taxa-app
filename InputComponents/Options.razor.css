@@ -7,7 +7,7 @@
 }
 
     main > div {
-        height: 10%;
+        height: 15mm;
         background-repeat: no-repeat;
         background-size: 100mm 100%;
         display: flex;
@@ -32,6 +32,10 @@ div > h4 {
 select.cart {
     font-size: 15px;
     margin-right: 53mm;
+    border: solid;
+    border-color: gray;
+    border-width: 3px;
+    border-radius: 0;
 }
 
 .Choice {
@@ -57,7 +61,10 @@ input.numeric {
     width: 40px;
     height: 24px;
     font-size: 15px;
-
+    border: solid;
+    border-color: gray;
+    border-width: 2px;
+    border-radius: 0;
 }
 
 input {
