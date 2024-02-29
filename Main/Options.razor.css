@@ -31,26 +31,35 @@ div > h4 {
 
 select.cart {
     font-size: 15px;
-    margin-right: 50mm;
-    
-}
-
-input {
-    width: 30px;
-    height: 30px;
-    margin-right: 27mm;
+    margin-right: 53mm;
 }
 
 .Choice {
     display: flex;
     align-items: center;
     justify-content: end;
-    /*border: solid;*/
 }
 
 p {
     width: 20mm;
     color: black;
     font-size: small;
+    font-weight: bold;
     padding-right: 6mm;
+}
+
+input.Check {
+    width: 24px;
+    height: 24px;
+}
+
+input.numeric {
+    width: 40px;
+    height: 24px;
+    font-size: 15px;
+
+}
+
+input {
+    margin-right: 27mm;
 }
