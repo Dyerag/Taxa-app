@@ -3,10 +3,6 @@
     public enum Time
     {
         Day,
-        Night,
-        Weekend,
-        Holiday
-       
-
+        Night
     }
 }
