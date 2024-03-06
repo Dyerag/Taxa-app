@@ -29,7 +29,7 @@ div > h4 {
     color: white;
 }
 
-select.cart {
+::deep select.cart {
     font-size: 15px;
     margin-right: 53mm;
     border: solid;
@@ -41,7 +41,7 @@ select.cart {
 .Choice {
     display: flex;
     align-items: center;
-    justify-content: end;
+    
 }
 
 p {
@@ -52,7 +52,7 @@ p {
     padding-right: 6mm;
 }
 
-input.Check {
+::deep input.Check {
     width: 24px;
     height: 24px;
 }
@@ -67,6 +67,6 @@ input.numeric {
     border-radius: 0;
 }
 
-input {
+::deep input {
     margin-right: 27mm;
 }
