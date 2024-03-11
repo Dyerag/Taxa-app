@@ -34,7 +34,7 @@ div > h4 {
     margin-right: 53mm;
     border: solid;
     border-color: gray;
-    border-width: 3px;
+    border-width: 2px;
     border-radius: 0;
 }
 
@@ -57,7 +57,7 @@ p {
     height: 24px;
 }
 
-input.numeric {
+::deep .numeric {
     width: 40px;
     height: 24px;
     font-size: 15px;

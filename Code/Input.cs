@@ -1,10 +1,10 @@
 ﻿namespace TaxaApp.Code
 {
-    
+
     public class Input
     {
-        public VehicleSize Size { get; set; }
-        public Time Period { get; set; }
+        public VehicleSize Size { get; set; } = VehicleSize.Default;
+        public Time Period { get; set; } = Time.Default;
         public int Bicycle { get; set; }
         public int Carry { get; set; }
         public bool Airport { get; set; }

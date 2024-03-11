@@ -2,7 +2,12 @@
 {
     public enum Time
     {
+        Default,
         Day,
-        Night
+        Night,
+        Weekend,
+        Holiday,
+        Dec24,
+        Dec31
     }
 }
