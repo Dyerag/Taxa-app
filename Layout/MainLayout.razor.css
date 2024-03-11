@@ -5,15 +5,14 @@
 main {
     margin-top: 14px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     /*height: 168mm;*/
 }
 
 .CoreColor {
     border: solid;
     border-width: 2px;
-    background-color: white;    
-    
+    background-color: white;
 }
 
 #left {
@@ -21,8 +20,10 @@ main {
 }
 
 #right {
-    margin-left:8px;
-    display:flex;
+    margin-left: 8px;
     width: 20cm;
-    border:solid;
+}
+
+#result {
+    margin-top: 16px;
 }

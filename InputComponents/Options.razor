@@ -1,9 +1,9 @@
-﻿<EditForm Model="@form" style="height:100%;">
+﻿<EditForm Model="@OptionForm" style="height:100%;">
     <main>
         <div class="yellowArrow">
             <h4>Vogn</h4>
             <label for="Size"></label>
-            <InputSelect @bind-Value=form.Size name="size" id="Size" class="cart">
+            <InputSelect @bind-Value=OptionForm.Size name="size" id="Size" class="cart">
                 <option value="Default" disabled>Vælg vogn</option>
                 <option value="Normal">Almindelig</option>
                 <option value="Large">Stor</option>
@@ -11,7 +11,7 @@
         </div>
         <div class="blackArrow">
             <h4>Periode</h4>
-            <InputSelect @bind-Value=form.Period name="time" class="cart">
+            <InputSelect @bind-Value=OptionForm.Period name="time" class="cart">
                 <option value="Default" disabled>Vælg periode</option>
                 <option value="Day">Dag</option>
                 <option value="Night">Nat</option>
@@ -24,49 +24,49 @@
         <div class="yellowArrow">
             <h4>Cykel</h4>
             <div class="Choice">
-                <InputNumber @bind-Value=form.Bicycle class="numeric"></InputNumber>
+                <InputNumber @bind-Value=OptionForm.Bicycle class="numeric"></InputNumber>
                 <p>+ 30kr.</p>
             </div>
         </div>
         <div class="blackArrow">
             <h4>Opbæring</h4>
             <div class="Choice">
-                <InputNumber  @bind-Value=form.Carry class="numeric"></InputNumber>
+                <InputNumber @bind-Value=OptionForm.Carry class="numeric"></InputNumber>
                 <p>+ 30kr.</p>
             </div>
         </div>
         <div class="yellowArrow">
             <h4>Lufthavn</h4>
             <div class="Choice">
-                <InputCheckbox @bind-Value=form.Airport class="Check"></InputCheckbox>
+                <InputCheckbox @bind-Value=OptionForm.Airport class="Check"></InputCheckbox>
                 <p>+ 15kr.</p>
             </div>
         </div>
         <div class="blackArrow">
             <h4>5-6 passengerer</h4>
             <div class="Choice">
-                <InputCheckbox @bind-Value=form.Passengers class="Check"></InputCheckbox>
+                <InputCheckbox @bind-Value=OptionForm.Passengers class="Check"></InputCheckbox>
                 <p>+ 40kr.</p>
             </div>
         </div>
         <div class="yellowArrow">
             <h4>LiftVogn</h4>
             <div class="Choice">
-                <InputCheckbox @bind-Value=form.LiftCart class="Check"></InputCheckbox>
+                <InputCheckbox @bind-Value=OptionForm.LiftCart class="Check"></InputCheckbox>
                 <p>+ 350kr.</p>
             </div>
         </div>
         <div class="blackArrow">
             <h4>Øresund</h4>
             <div class="Choice">
-                <InputCheckbox @bind-Value=form.Øresund class="Check"></InputCheckbox>
+                <InputCheckbox @bind-Value=OptionForm.Øresund class="Check"></InputCheckbox>
                 <p>+ 350kr.</p>
             </div>
         </div>
         <div class="yellowArrow">
             <h4>Storebæltsbroen</h4>
             <div class="Choice">
-                <InputCheckbox @bind-Value=form.Storebæltsbroen class="Check"></InputCheckbox>
+                <InputCheckbox @bind-Value=OptionForm.Storebæltsbroen class="Check"></InputCheckbox>
                 <p>+ 540kr.</p>
             </div>
         </div>
@@ -74,6 +74,5 @@
 </EditForm>
 
 @code {
-    public Input form { get; set; } = new();
-    
+    public Input OptionForm { get; set; } = new();
 }
