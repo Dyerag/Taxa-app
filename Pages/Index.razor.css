@@ -1,3 +1,42 @@
 ﻿#body {
-    height: 4cm;
+    height: 43mm;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: inherit;
+    justify-content: space-around;
+    width: 105mm;
+    padding-left: 2mm;
+    padding-right: 2mm;
+    border: solid;
+    border-radius: 17px;
+    border-color: dimgray;
+    border-width: 2px;
+    height: 15mm;
+}
+
+    header > div {
+        width: 17mm;
+        margin-top: 7px;
+        margin-bottom: 2px;
+        text-align: center;
+    }
+
+        header > div > h5 {
+            border-bottom: solid;
+            border-bottom-color: dimgrey;
+            border-bottom-width: 1px;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 13.28px;
 }
