@@ -6,25 +6,4 @@ main {
     margin-top: 14px;
     display: flex;
     justify-content: center;
-    /*height: 168mm;*/
-    
-}
-
-.CoreColor {
-    border: solid;
-    border-width: 2px;
-    background-color: white;
-}
-
-#left {
-    margin-right: 8px;
-}
-
-#right {
-    margin-left: 8px;
-    width: 17cm;
-}
-
-#result {
-    margin-top: 16px;
 }

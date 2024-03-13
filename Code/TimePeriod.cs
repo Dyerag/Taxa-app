@@ -1,6 +1,6 @@
 ﻿namespace TaxaApp.Code
 {
-    public enum Time
+    public enum TimePeriod
     {
         Default,
         Day,

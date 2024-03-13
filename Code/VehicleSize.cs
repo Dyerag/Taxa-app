@@ -2,8 +2,8 @@
 {
     public enum VehicleSize
     {
+        Default,
         Normal,
-        Large,
-        Default
+        Large
     }
 }
