@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace TaxaApp.Code
 {
-    public partial class Input
+    public class OptionForm
     {
         public VehicleSize Size { get; set; } = VehicleSize.Default;
         public TimePeriod Period { get; set; } = TimePeriod.Default;

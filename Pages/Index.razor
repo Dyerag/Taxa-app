@@ -1,15 +1,15 @@
-﻿@page "/"
+﻿@page "/"   
 
 <PageTitle>Taxa App</PageTitle>
 
 <div class="CoreColor" id="left">
-    <Options />
+    <Options FormChange="@UpdateOptionForm"/>
 </div>
 <div id="right">
     <div class="CoreColor">
         <Map />
     </div>
     <div class="CoreColor" id="result">
-        <Result />
+        <Result test="Option" />
     </div>
 </div>

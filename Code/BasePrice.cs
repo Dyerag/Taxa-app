@@ -7,9 +7,9 @@ namespace TaxaApp.Code
 {
     public class BasePrice
     {
-        public int StartingPrice { get; set; } = 0;
-        public double PerKm { get; set; } = 0;
-        public double PerMin { get; set; } = 0;
+        public int StartingPrice { get; set; } 
+        public double PerKm { get; set; }
+        public double PerMin { get; set; }
 
         public BasePrice()
         {
