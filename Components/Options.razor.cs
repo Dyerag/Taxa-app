@@ -8,7 +8,5 @@ namespace TaxaApp.Components
         public OptionForm Form { get; set; } = new();
         [Parameter]
         public EventCallback<OptionForm> FormChange { get; set; }
-        //private async Task FormUpdate() => await FormChange.InvokeAsync(Form);
-
     }
 }
