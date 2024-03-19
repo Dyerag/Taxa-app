@@ -1,5 +1,7 @@
-﻿<EditForm Model="@Form" style="height:100%;" @oninput="@(()=>FormChange.InvokeAsync(Form))">
+﻿<EditForm Model="Form" style="height:100%;" OnValidSubmit="()=>FormChange.InvokeAsync(Form)">
+    <DataAnnotationsValidator />
     <main>
+        <ValidationSummary />
         <div class="yellowArrow">
             <label for="size">Vogn</label>
             <InputSelect @bind-Value=Form.Size id="size" class="cart">
@@ -23,7 +25,7 @@
         <div class="yellowArrow">
             <label for="bike">Cykler</label>
             <div class="Choice">
-                <InputNumber min="0" @bind-Value=Form.Bicycle id="bike" class="numeric" />
+                <InputNumber @bind-Value=Form.Bicycle id="bike" class="numeric" />
                 <p>+ 30kr.</p>
             </div>
         </div>
@@ -31,6 +33,7 @@
             <label for="carry">Opbæringer</label>
             <div class="Choice">
                 <InputNumber @bind-Value=Form.Carry id="carry" class="numeric" />
+
                 <p>+ 30kr.</p>
             </div>
         </div>
@@ -69,5 +72,6 @@
                 <p>+ 540kr.</p>
             </div>
         </div>
+        <button type="submit" class="btn btn primary">sub</button> @*just to see if submit works. something is currently invalid when doing validsubmit*@
     </main>
 </EditForm>
