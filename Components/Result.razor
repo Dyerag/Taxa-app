@@ -1,0 +1,33 @@
+﻿<div id="body">
+    <header>
+        <div>
+            <h5>Start</h5>
+            <p>@PriceDisplay.StartingPrice</p>
+        </div>
+        <div>
+            <h5>Kr./km</h5>
+            <p>@PriceDisplay.PerKm</p>
+        </div>
+        <div>
+            <h5>Kr./min</h5>
+            <p>@PriceDisplay.PerMin</p>
+        </div>
+        <div>
+            <h5>Rejsetid</h5>
+            <p></p>
+        </div>
+        <div>
+            <h5>Længde</h5>
+            <p></p>
+        </div>
+    </header>
+    <main>
+        <h1>The output</h1>
+    </main>
+</div>
+
+@code {
+    BasePrice PriceDisplay = new();
+    [Parameter]
+    public OptionForm test { get; set; }
+}

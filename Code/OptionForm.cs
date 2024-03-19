@@ -1,10 +1,12 @@
-﻿namespace TaxaApp.Code
-{
+﻿using Microsoft.AspNetCore.Components;
+using System.ComponentModel.DataAnnotations;
 
-    public class Input
+namespace TaxaApp.Code
+{
+    public class OptionForm
     {
         public VehicleSize Size { get; set; } = VehicleSize.Default;
-        public Time Period { get; set; } = Time.Default;
+        public TimePeriod Period { get; set; } = TimePeriod.Default;
         public int Bicycle { get; set; }
         public int Carry { get; set; }
         public bool Airport { get; set; }

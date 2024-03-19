@@ -1,7 +1,15 @@
-﻿@page "/"
+﻿@page "/"   
 
 <PageTitle>Taxa App</PageTitle>
 
-<div id="body">
-    <h1>Hello, world!</h1>
+<div class="CoreColor" id="left">
+    <Options FormChange="@UpdateOptionForm"/>
+</div>
+<div id="right">
+    <div class="CoreColor">
+        <Map />
+    </div>
+    <div class="CoreColor" id="result">
+        <Result test="Option" />
+    </div>
 </div>

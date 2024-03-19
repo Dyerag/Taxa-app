@@ -1,17 +1,16 @@
-﻿<EditForm Model="@OptionForm" style="height:100%;">
+﻿<EditForm Model="@Form" style="height:100%;" @oninput="@(()=>FormChange.InvokeAsync(Form))">
     <main>
         <div class="yellowArrow">
-            <h4>Vogn</h4>
-            <label for="Size"></label>
-            <InputSelect @bind-Value=OptionForm.Size name="size" id="Size" class="cart">
+            <label for="size">Vogn</label>
+            <InputSelect @bind-Value=Form.Size id="size" class="cart">
                 <option value="Default" disabled>Vælg vogn</option>
                 <option value="Normal">Almindelig</option>
                 <option value="Large">Stor</option>
             </InputSelect>
         </div>
         <div class="blackArrow">
-            <h4>Periode</h4>
-            <InputSelect @bind-Value=OptionForm.Period name="time" class="cart">
+            <label for="period">Periode</label>
+            <InputSelect @bind-Value=Form.Period class="cart" id="period">
                 <option value="Default" disabled>Vælg periode</option>
                 <option value="Day">Dag</option>
                 <option value="Night">Nat</option>
@@ -22,57 +21,53 @@
             </InputSelect>
         </div>
         <div class="yellowArrow">
-            <h4>Cykel</h4>
+            <label for="bike">Cykler</label>
             <div class="Choice">
-                <InputNumber @bind-Value=OptionForm.Bicycle class="numeric"></InputNumber>
+                <InputNumber min="0" @bind-Value=Form.Bicycle id="bike" class="numeric" />
                 <p>+ 30kr.</p>
             </div>
         </div>
         <div class="blackArrow">
-            <h4>Opbæring</h4>
+            <label for="carry">Opbæringer</label>
             <div class="Choice">
-                <InputNumber @bind-Value=OptionForm.Carry class="numeric"></InputNumber>
+                <InputNumber @bind-Value=Form.Carry id="carry" class="numeric" />
                 <p>+ 30kr.</p>
             </div>
         </div>
         <div class="yellowArrow">
-            <h4>Lufthavn</h4>
+            <label for="airport">Lufthavn</label>
             <div class="Choice">
-                <InputCheckbox @bind-Value=OptionForm.Airport class="Check"></InputCheckbox>
+                <InputCheckbox @bind-Value=Form.Airport id="airport" class="Check" />
                 <p>+ 15kr.</p>
             </div>
         </div>
         <div class="blackArrow">
-            <h4>5-6 passengerer</h4>
+            <label for="passenger">5-6 passengerer</label>
             <div class="Choice">
-                <InputCheckbox @bind-Value=OptionForm.Passengers class="Check"></InputCheckbox>
+                <InputCheckbox @bind-Value=Form.Passengers id="passenger" class="Check" />
                 <p>+ 40kr.</p>
             </div>
         </div>
         <div class="yellowArrow">
-            <h4>LiftVogn</h4>
+            <label for="lift">LiftVogn</label>
             <div class="Choice">
-                <InputCheckbox @bind-Value=OptionForm.LiftCart class="Check"></InputCheckbox>
+                <InputCheckbox @bind-Value=Form.LiftCart id="lift" class="Check" />
                 <p>+ 350kr.</p>
             </div>
         </div>
         <div class="blackArrow">
-            <h4>Øresund</h4>
+            <label for="øresund">Øresund</label>
             <div class="Choice">
-                <InputCheckbox @bind-Value=OptionForm.Øresund class="Check"></InputCheckbox>
+                <InputCheckbox @bind-Value=Form.Øresund id="øresund" class="Check" />
                 <p>+ 350kr.</p>
             </div>
         </div>
         <div class="yellowArrow">
-            <h4>Storebæltsbroen</h4>
+            <label for="bridge">Storebæltsbroen</label>
             <div class="Choice">
-                <InputCheckbox @bind-Value=OptionForm.Storebæltsbroen class="Check"></InputCheckbox>
+                <InputCheckbox @bind-Value=Form.Storebæltsbroen id="bridge" class="Check" />
                 <p>+ 540kr.</p>
             </div>
         </div>
     </main>
 </EditForm>
-
-@code {
-    public Input OptionForm { get; set; } = new();
-}
