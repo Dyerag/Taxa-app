@@ -2,7 +2,6 @@
 {
     public enum TimePeriod
     {
-        Default,
         Day,
         Night,
         Weekend,

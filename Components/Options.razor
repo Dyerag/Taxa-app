@@ -5,7 +5,7 @@
         <div class="yellowArrow">
             <label for="size">Vogn</label>
             <InputSelect @bind-Value=Form.Size id="size" class="cart">
-                <option value="Default" disabled>Vælg vogn</option>
+                <option selected disabled>Vælg vogn</option>
                 <option value="Normal">Almindelig</option>
                 <option value="Large">Stor</option>
             </InputSelect>
@@ -13,7 +13,7 @@
         <div class="blackArrow">
             <label for="period">Periode</label>
             <InputSelect @bind-Value=Form.Period class="cart" id="period">
-                <option value="Default" disabled>Vælg periode</option>
+                <option selected disabled>Vælg periode</option>
                 <option value="Day">Dag</option>
                 <option value="Night">Nat</option>
                 <option value="Weekend">Weekend</option>
@@ -25,15 +25,14 @@
         <div class="yellowArrow">
             <label for="bike">Cykler</label>
             <div class="Choice">
-                <InputNumber @bind-Value=Form.Bicycle id="bike" class="numeric" />
+                <InputNumber @bind-Value=Form.Bicycle id="bike" class="numeric" ParsingErrorMessage="@CarryErrorMSG("Cykler")" />
                 <p>+ 30kr.</p>
             </div>
         </div>
         <div class="blackArrow">
             <label for="carry">Opbæringer</label>
             <div class="Choice">
-                <InputNumber @bind-Value=Form.Carry id="carry" class="numeric" />
-
+                <InputNumber @bind-Value=Form.Carry id="carry" class="numeric" ParsingErrorMessage="@CarryErrorMSG("Opbæringer")" />
                 <p>+ 30kr.</p>
             </div>
         </div>
@@ -72,6 +71,6 @@
                 <p>+ 540kr.</p>
             </div>
         </div>
-        <button type="submit" class="btn btn primary">sub</button> @*just to see if submit works. something is currently invalid when doing validsubmit*@
+        <button type="submit" class="btn btn primary">sub</button> 
     </main>
 </EditForm>
