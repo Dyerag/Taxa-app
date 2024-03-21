@@ -1,7 +1,6 @@
-﻿<EditForm Model="Form" style="height:100%;" OnValidSubmit="()=>FormChange.InvokeAsync(Form)">
+﻿<EditForm Model="Form" id="Submitform" style="height:100%;" OnValidSubmit="()=>FormChange.InvokeAsync(Form)">
     <DataAnnotationsValidator />
     <main>
-        <ValidationSummary />
         <div class="yellowArrow">
             <label for="size">Vogn</label>
             <InputSelect @bind-Value=Form.Size id="size" class="cart">
@@ -25,14 +24,14 @@
         <div class="yellowArrow">
             <label for="bike">Cykler</label>
             <div class="Choice">
-                <InputNumber @bind-Value=Form.Bicycle id="bike" class="numeric" ParsingErrorMessage="@CarryErrorMSG("Cykler")" />
+                <InputNumber @bind-Value=Form.Bicycle id="bike" class="numeric" ParsingErrorMessage="@NumberFieldsErrorMSG("Cykler")" />
                 <p>+ 30kr.</p>
             </div>
         </div>
         <div class="blackArrow">
             <label for="carry">Opbæringer</label>
             <div class="Choice">
-                <InputNumber @bind-Value=Form.Carry id="carry" class="numeric" ParsingErrorMessage="@CarryErrorMSG("Opbæringer")" />
+                <InputNumber @bind-Value=Form.Carry id="carry" class="numeric" ParsingErrorMessage="@NumberFieldsErrorMSG("Opbæringer")" />
                 <p>+ 30kr.</p>
             </div>
         </div>
@@ -64,13 +63,14 @@
                 <p>+ 350kr.</p>
             </div>
         </div>
-        <div class="yellowArrow">
+        <div class="yellowArrow" id="bottom">
             <label for="bridge">Storebæltsbroen</label>
             <div class="Choice">
                 <InputCheckbox @bind-Value=Form.Storebæltsbroen id="bridge" class="Check" />
                 <p>+ 540kr.</p>
             </div>
         </div>
-        <button type="submit" class="btn btn primary">sub</button> 
+        <ValidationSummary id="validationText" />
     </main>
 </EditForm>
+

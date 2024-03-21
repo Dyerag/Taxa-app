@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Forms;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using TaxaApp.Code;
 
 namespace TaxaApp.Components
@@ -10,6 +12,7 @@ namespace TaxaApp.Components
         [Parameter]
         public EventCallback<OptionForm> FormChange { get; set; }
 
-        private string CarryErrorMSG(string field) => $"\"{field}\" feltet skal angive et heltal";
+        private string NumberFieldsErrorMSG(string field) => $"\"{field}\" feltet skal angive et heltal";
+
     }
 }
