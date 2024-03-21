@@ -8,6 +8,7 @@
 
     main > div {
         height: 15mm;
+        margin-bottom: 11px;
         background-repeat: no-repeat;
         background-size: 100mm 100%;
         display: flex;
@@ -15,12 +16,16 @@
         justify-content: space-between;
     }
 
+#bottom {
+    margin-bottom: 0;
+}
+
 div > label {
     text-decoration: underline;
     padding-left: 15px;
     font-weight: bold;
     font-size: 1em;
-    pointer-events:none;
+    pointer-events: none;
 }
 
 .yellowArrow {
@@ -71,4 +76,9 @@ p {
 
 ::deep input {
     margin-right: 27mm;
+}
+
+::deep #validationText {
+    font-size: 15px;
+    color: red;
 }
