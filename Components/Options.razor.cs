@@ -12,7 +12,7 @@ namespace TaxaApp.Components
         [Parameter]
         public EventCallback<OptionForm> FormChange { get; set; }
 
-        private string NumberFieldsErrorMSG(string field) => $"\"{field}\" feltet skal angive et heltal";
+        private string NumberFieldsEmpty(string field) => $"{field} skal indholde et heltal";
 
     }
 }

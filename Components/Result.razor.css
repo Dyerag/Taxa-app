@@ -1,10 +1,10 @@
 ﻿#body {
-    height: 43mm;
+    /*height: 43mm;*/
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 13px;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 header {
@@ -40,3 +40,23 @@ p {
     padding: 0;
     font-size: 13.28px;
 }
+
+button {
+    background-color: rgb(33,95,164);
+    color: whitesmoke;
+    width: 2.3cm;
+    height: 9mm;
+    border-radius: 7px;
+    border: none;
+    margin-top: 4mm;
+    box-shadow:0 6px rgb(25, 67, 113);
+}
+
+    button:active {
+        background-color: whitesmoke;
+        color: rgb(33,95,164);
+        border: solid;
+        border-width: 2px;
+        box-shadow:0 0;
+        transform: translateY(6px);
+    }

@@ -5,10 +5,10 @@ namespace TaxaApp.Code
 {
     public class OptionForm
     {
-        [Required(ErrorMessage = "Vogn skal vælges")]
+        [Required(ErrorMessage = "Der er ikke angivet en vogn")]
         public VehicleSize? Size { get; set; }
 
-        [Required(ErrorMessage = "Periode skal vælges")]
+        [Required(ErrorMessage = "Der er ikke angivet en periode")]
         public TimePeriod? Period { get; set; }
 
         [Range(0, double.PositiveInfinity, ErrorMessage = "Der kan ikke være mindre end 0 cykler")]
