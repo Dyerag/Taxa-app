@@ -52,11 +52,12 @@ div > label {
 }
 
 p {
-    width: 20mm;
+    word-spacing: 0.30em;
+    width: 23mm;
     color: black;
     font-size: small;
     font-weight: bold;
-    padding-right: 6mm;
+    padding-right: 3mm;
 }
 
 ::deep input.Check {
