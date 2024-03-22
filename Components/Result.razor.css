@@ -49,14 +49,15 @@ button {
     border-radius: 7px;
     border: none;
     margin-top: 4mm;
-    box-shadow:0 6px rgb(25, 67, 113);
+    box-shadow: 0 6px rgb(25, 67, 113);
+    font-size: 17px;
 }
 
     button:active {
         background-color: whitesmoke;
         color: rgb(33,95,164);
-        border: solid;
-        border-width: 2px;
-        box-shadow:0 0;
+        border: solid rgb(25, 67, 113);
+        border-width: 4px;
+        box-shadow: 0 0;
         transform: translateY(6px);
     }
