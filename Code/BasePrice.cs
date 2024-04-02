@@ -10,19 +10,18 @@ namespace TaxaApp.Code
         public int StartingPrice { get; set; } 
         public double PerKm { get; set; }
         public double PerMin { get; set; }
+        public TimeOnly TravelTime { get; set; }
+        public double Distance { get; set; }
+
 
         public BasePrice()
         {
             //prices();
         }
 
-        public void prices()
+        public void GetPrices(VehicleSize size, TimePeriod period)
         {
-            VehicleSize size = new VehicleSize();
-            TimePeriod timePeriod = new TimePeriod();
-            size = VehicleSize.Normal;
-            timePeriod = TimePeriod.Day;
-            switch (size, timePeriod)
+            switch (size, period)
             {
                 case (VehicleSize.Normal, TimePeriod.Day):
                     StartingPrice = 37;

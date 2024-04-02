@@ -2,33 +2,32 @@
     <header>
         <div>
             <h5>Start</h5>
-            <p>@PriceDisplay.StartingPrice</p>
+            <p>@TaxiCost.StartingPrice</p>
         </div>
         <div>
             <h5>Kr./km</h5>
-            <p>@PriceDisplay.PerKm</p>
+            <p>@TaxiCost.PerKm</p>
         </div>
         <div>
             <h5>Kr./min</h5>
-            <p>@PriceDisplay.PerMin</p>
+            <p>@TaxiCost.PerMin</p>
         </div>
         <div>
             <h5>Rejsetid</h5>
-            <p></p>
+            <p>@TaxiCost.TravelTime</p>
         </div>
         <div>
             <h5>Længde</h5>
-            <p></p>
+            <p>@TaxiCost.Distance</p>
         </div>
     </header>
     <button type="submit" form="Submitform">Beregn</button>
-    <main>
-        <h1>The output</h1>
-    </main>
+    <h5 id="ResultText">Rejsen koster i alt:</h5>
+    <h3>0 kr.</h3>
 </div>
 
 
 @code {
-    BasePrice PriceDisplay = new();
+    BasePrice TaxiCost = new();
 
 }
