@@ -5,23 +5,17 @@ using System.Runtime.CompilerServices;
 
 namespace TaxaApp.Code
 {
-    public class BasePrice
+    public class DisplayValues
     {
-        public int StartingPrice { get; set; } 
+        public int StartingPrice { get; set; }
         public double PerKm { get; set; }
         public double PerMin { get; set; }
         public TimeOnly TravelTime { get; set; }
         public double Distance { get; set; }
 
-
-        public BasePrice()
+        public void GetValues(OptionForm Transport)
         {
-            //prices();
-        }
-
-        public void GetPrices(VehicleSize size, TimePeriod period)
-        {
-            switch (size, period)
+            switch (Transport.Size, Transport.Period)
             {
                 case (VehicleSize.Normal, TimePeriod.Day):
                     StartingPrice = 37;
@@ -45,6 +39,11 @@ namespace TaxaApp.Code
                     StartingPrice = 87;
                     PerKm = 19;
                     PerMin = 7;
+                    break;
+                default:
+                    StartingPrice = 0;
+                    PerKm = 0;
+                    PerMin = 0;
                     break;
             }
         }
