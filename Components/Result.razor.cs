@@ -5,7 +5,8 @@ namespace TaxaApp.Components
 {
     public partial class Result
     {
-        public DisplayValues ResultDisplay { get; set; } = new();
+        DisplayValues resultDisplay = new();
+        double taxiCost = 0;
 
         private OptionForm _inputForm;
         [Parameter]
@@ -18,7 +19,7 @@ namespace TaxaApp.Components
             set
             {
                 _inputForm = value;
-                ResultDisplay.GetValues(InputForm);
+                resultDisplay.GetValues(InputForm);
             }
         }
     }
