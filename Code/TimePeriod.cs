@@ -4,9 +4,5 @@
     {
         Day,
         Night,
-        Weekend,
-        Holiday,
-        Dec24,
-        Dec31
     }
 }

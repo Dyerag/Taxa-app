@@ -1,10 +1,8 @@
 ﻿#body {
-    /*height: 43mm;*/
     display: flex;
     flex-direction: column;
     padding: 13px;
     align-items: center;
-    /*justify-content: center;*/
 }
 
 header {
@@ -61,3 +59,16 @@ button {
         box-shadow: 0 0;
         transform: translateY(6px);
     }
+
+#ResultText {
+    margin-bottom: 4px;
+}
+
+h3 {
+    margin: 0;
+    margin-bottom: 4px;
+    border-bottom: double;
+    border-bottom-width: 4.5px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
